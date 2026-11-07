@@ -1,0 +1,9 @@
+<section id="strings" data-transition="fade" style="background:#faf8f3;color:#1f1e33;font-family:Inter, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:68px;font-weight:600">Strings: f-strings over concatenation</h2>
+<div style="background:#f1ede1;border-radius:16px;padding:32px;font-family:'SF Mono', monospace;font-size:28px;line-height:1.6">name = "Hardik"<br>revenue = 5000<br>print(f"{name}'s report: revenue = {revenue}")</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;background:#ffffff;border:1px solid #e3e0d6;border-radius:16px;padding:32px"><p style="font-size:26px;color:#b5432f">"Price: " + price → <b>TypeError</b></p></div>
+<div style="flex:1;background:#ffffff;border:1px solid #e3e0d6;border-radius:16px;padding:32px"><p style="font-size:26px;color:#3f7a4e">f"Price: {price}" → works, auto-converts</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#8a8578">Gotcha: + requires str(x) on numbers; f-strings never do.</p>
+</section>

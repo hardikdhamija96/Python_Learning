@@ -1,0 +1,9 @@
+<section id="conditions" data-transition="fade" style="background:#faf8f3;color:#1f1e33;font-family:Inter, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:68px;font-weight:600">Conditions &amp; truthy / falsy</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;background:#2b2a4c;border-radius:16px;padding:36px"><h3 style="font-size:28px;color:#c9a86a;margin:0">Falsy (complete list)</h3><p style="font-size:26px;color:#faf8f3;line-height:1.6">False · 0 · 0.0 · "" · [] · () · {} · set() · None</p></div>
+<div style="flex:1;background:#ffffff;border:1px solid #e3e0d6;border-radius:16px;padding:36px"><h3 style="font-size:28px;color:#2b2a4c;margin:0">Truthy</h3><p style="font-size:26px;line-height:1.6">Everything else — including "0" and [0]</p></div>
+</div>
+<div style="background:#f1ede1;border-radius:16px;padding:32px;font-family:'SF Mono', monospace;font-size:26px">status = "high" if revenue &gt; 1000 else "low"&nbsp;&nbsp;&nbsp;# ternary</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#8a8578">Gotcha: if revenue: silently skips when revenue = 0, even though 0 is a valid value.</p>
+</section>

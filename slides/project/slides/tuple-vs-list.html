@@ -1,0 +1,11 @@
+<section id="tuple-vs-list" data-transition="fade" style="background:#faf8f3;color:#1f1e33;font-family:Inter, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600">list vs tuple: same shape, different methods</h2>
+<p style="font-size:26px;color:#6a6557">Not "same functions, different behavior" — tuples simply don't have the mutating ones.</p>
+<table style="width:100%;border-collapse:collapse;font-size:27px">
+<tr style="background:#2b2a4c;color:#faf8f3"><th style="padding:16px;text-align:left;border-radius:8px 0 0 0">Method</th><th style="padding:16px;text-align:center">list</th><th style="padding:16px;text-align:center;border-radius:0 8px 0 0">tuple</th></tr>
+<tr style="background:#ffffff"><td style="padding:16px;border-bottom:1px solid #e3e0d6;font-family:monospace">.count(x) / .index(x)</td><td style="padding:16px;border-bottom:1px solid #e3e0d6;text-align:center;color:#3f7a4e">✓</td><td style="padding:16px;border-bottom:1px solid #e3e0d6;text-align:center;color:#3f7a4e">✓</td></tr>
+<tr style="background:#ffffff"><td style="padding:16px;border-bottom:1px solid #e3e0d6;font-family:monospace">.append / .remove / .pop</td><td style="padding:16px;border-bottom:1px solid #e3e0d6;text-align:center;color:#3f7a4e">✓</td><td style="padding:16px;border-bottom:1px solid #e3e0d6;text-align:center;color:#b5432f">✗</td></tr>
+<tr style="background:#ffffff"><td style="padding:16px;font-family:monospace">.sort / .insert / .reverse</td><td style="padding:16px;text-align:center;color:#3f7a4e">✓</td><td style="padding:16px;text-align:center;color:#b5432f">✗</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#8a8578">my_tuple.append(5) → AttributeError (not TypeError) — a different error than reassigning an index.</p>
+</section>

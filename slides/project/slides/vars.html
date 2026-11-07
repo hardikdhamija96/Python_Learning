@@ -1,0 +1,15 @@
+<section id="vars" data-transition="fade" style="background:#faf8f3;color:#1f1e33;font-family:Inter, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:68px;font-weight:600">Variables are names, not boxes</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;background:#ffffff;border:1px solid #e3e0d6;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:30px;font-weight:600;color:#2b2a4c">C / Java mental model</h3>
+<p style="font-size:26px;line-height:1.5">A variable is a fixed box. Assignment overwrites what's inside it.</p>
+</div>
+<div style="flex:1;background:#2b2a4c;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:30px;font-weight:600;color:#c9a86a">Python's model</h3>
+<p style="font-size:26px;line-height:1.5;color:#faf8f3">A name is a label pointing at an object. Assignment re-points the label; it never overwrites the object.</p>
+</div>
+</div>
+<div style="background:#f1ede1;border-radius:16px;padding:32px;font-family:'SF Mono', monospace;font-size:26px;color:#1f1e33">a = [1, 2, 3]&nbsp;&nbsp;&nbsp;b = a&nbsp;&nbsp;&nbsp;a.append(4)&nbsp;&nbsp;&nbsp;→ b is [1, 2, 3, 4] too</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#8a8578">Gotcha: two names can point to the same mutable object — change via one, the other sees it too.</p>
+</section>
